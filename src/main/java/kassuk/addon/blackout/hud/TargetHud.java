@@ -295,7 +295,7 @@ public class TargetHud extends HudElement {
             renderer.quad(x + 1 * scale.get(), y + 1 * scale.get(), 58 * scale.get(), 58 * scale.get(), new Color(102, 102, 102, 255));
 
             if (renderSkinTextures != null) {
-                drawFace(renderer, scale.get().floatValue(), x, y, 0);
+                drawFace(renderer, scale.get().floatValue(), x + 6 * scale.get(), y + 6 * scale.get(), 0);
             }
 
             // Name
@@ -425,7 +425,7 @@ public class TargetHud extends HudElement {
             drawStack.scale(scale, scale, 1);
             drawStack.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(tilt));
 
-            PlayerSkinDrawer.draw(renderer.drawContext, renderSkinTextures, 20, 18, 32, -1);
+            PlayerSkinDrawer.draw(renderer.drawContext, renderSkinTextures, 0, 0, 48, -1);
 
             drawStack.pop();
         });
