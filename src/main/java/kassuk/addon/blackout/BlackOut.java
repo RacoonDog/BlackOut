@@ -5,6 +5,7 @@ import kassuk.addon.blackout.commands.*;
 import kassuk.addon.blackout.globalsettings.*;
 import kassuk.addon.blackout.hud.*;
 import kassuk.addon.blackout.modules.*;
+import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.commands.Commands;
 import meteordevelopment.meteorclient.pathing.PathManagers;
@@ -139,5 +140,10 @@ public class BlackOut extends MeteorAddon {
     @Override
     public String getPackage() {
         return "kassuk.addon.blackout";
+    }
+
+    @Override
+    public GithubRepo getRepo() {
+        return new GithubRepo("crosby-moe", "BlackOut");
     }
 }

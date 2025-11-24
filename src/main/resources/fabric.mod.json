@@ -11,8 +11,8 @@
     "Crosby"
   ],
   "contact": {
-    "sources": "https://github.com/RacoonDog/BlackOut/",
-    "issues": "https://github.com/RacoonDog/BlackOut/issues"
+    "sources": "https://github.com/crosby-moe/BlackOut/",
+    "issues": "https://github.com/crosby-moe/BlackOut/issues"
   },
   "icon": "assets/blackout/logo.png",
   "license": "GPL-3.0-or-later",
@@ -31,6 +31,7 @@
   },
   "depends": {
     "java": ">=21",
+    "fabric-loader": ">=0.15",
     "minecraft": ">=${mc_version}",
     "meteor-client": "*"
   }
